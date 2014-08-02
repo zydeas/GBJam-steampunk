@@ -37,6 +37,21 @@
         </scripts>
         <script>scripts\init_traderoutes.gml</script>
       </scripts>
+      <scripts name="Controls">
+        <script>scripts\input_get_key_name.gml</script>
+        <scripts name="Input_Init">
+          <script>scripts\input_init.gml</script>
+          <script>scripts\input_key_names.gml</script>
+          <script>scripts\input_pad_update.gml</script>
+          <script>scripts\input_stick_get.gml</script>
+          <script>scripts\input_is_locked.gml</script>
+          <script>scripts\input_vibrate_step.gml</script>
+          <script>scripts\input_vibrate.gml</script>
+          <script>scripts\input_pad_init.gml</script>
+          <script>scripts\get_input_pressed.gml</script>
+          <script>scripts\get_input.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <scripts name="Items">
       <script>scripts\item_sprite.gml</script>
@@ -54,12 +69,16 @@
     <script>scripts\draw_text_outline.gml</script>
     <script>scripts\init_towns.gml</script>
     <script>scripts\town_create.gml</script>
+    <scripts name="Ships">
+      <script>scripts\ships_stats_init.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\main_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\inventory_parent_obj</object>
+    <object>objects\input_obj</object>
     <objects name="Control">
       <object>objects\controller_obj</object>
       <object>objects\window_size_obj</object>
